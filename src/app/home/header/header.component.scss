@@ -1,12 +1,16 @@
 :host {
   display: block;
   padding-top: 4.06rem;
-  padding-left: 7.5rem;
   position: relative;
 }
 
 .header-co {
   display: flex;
+  align-items: center;
+  .unibook-ico {
+    width: 30px;
+    margin-left: 43px;
+  }
   .custom-btn {
     margin-left: auto;
     margin-right: 23px;
@@ -33,6 +37,17 @@
   }
 }
 
-@media all and (min-width: 768px) {
-
+@media all and (min-width: 1199px) {
+.header-co {
+  .custom-btn {
+    display: none;
+  }
+  .links {
+    display: flex!important;
+    flex-direction: row;
+    top: 63px;
+    left: 200px;
+    box-shadow: none;
+  }
+}
 }

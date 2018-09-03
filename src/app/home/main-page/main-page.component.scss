@@ -12,6 +12,7 @@
 
   .site-name {
     p {
+      font-family: Roboto-bold;
       width: 167px;
       font-size: 40px;
       font-weight: 900;
@@ -46,7 +47,9 @@
     }
   }
 }
-
+.book-cover {
+display: none;
+}
 .partners {
   width: 100%;
   background-image: linear-gradient(to right, #5bc0df, #01abec);
@@ -97,14 +100,12 @@
 }
 
 .mobile-icon {
-  width: 68px;
-  height: 26px;
+  display: flex;
+  justify-content: center;
+  height: 70px;
   margin: 0 auto;
   margin-top: 65px;
-  margin-bottom: 30px;
-
   img {
-    width: 100%;
     height: 100%;
   }
 }
@@ -136,9 +137,9 @@
     .text {
       .name {
         padding-bottom: 30px;
-
+        width: 230px;
         p {
-          font-family: Roboto;
+          font-family: Roboto-bold;
           font-size: 35px;
           font-weight: 900;
           line-height: 1;
@@ -164,7 +165,9 @@
     }
   }
 }
-
+.news-section:nth-child(1) {
+  padding-top: 0;
+}
 .library-section {
   display: flex;
   flex-direction: column;
@@ -202,7 +205,7 @@
     .text {
       .name {
         p {
-          font-family: Roboto;
+          font-family: Roboto-bold;
           font-size: 35px;
           font-weight: 900;
           line-height: 1;
@@ -220,6 +223,7 @@
         letter-spacing: -0.5px;
         text-align: center;
         color: white;
+        padding-top: 15px;
       }
     }
   }
@@ -246,19 +250,8 @@
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
-  .name {
-    padding: 0 40px;
 
-    p {
-      font-family: Roboto;
-      font-size: 35px;
-      font-weight: 900;
-      line-height: 1;
-      letter-spacing: -0.9px;
-      text-align: center;
-      color: #000000;
-    }
-  }
+
 
   .content {
     display: flex;
@@ -300,7 +293,6 @@
 
         img {
           position: absolute;
-          right: 10px;
         }
       }
 
@@ -314,8 +306,21 @@
     .text {
       padding: 0 40px;
       padding-top: 40px;
-
+      .name {
+        p {
+          width: 230px;
+          font-family: Roboto-bold;
+          font-size: 35px;
+          font-weight: 900;
+          line-height: 1;
+          letter-spacing: -0.9px;
+          text-align: center;
+          color: #000000;
+          margin: 0 auto;
+        }
+      }
       p {
+        padding-top: 30px;
         font-family: Roboto;
         font-size: 20px;
         font-weight: 300;
@@ -327,7 +332,18 @@
     }
   }
 }
-
+.edu-news-section:nth-child(1) {
+  padding-top: 0;
+  .content {
+    .text {
+      .name {
+        p {
+        padding-top: 0;
+        }
+      }
+    }
+  }
+}
 .footer {
   .logo-co {
     background-color: #3f3f3f;
@@ -405,16 +421,18 @@
   }
 
   .library-section {
-    align-items: flex-start;
-   padding-left: 0;
-   padding-right: 0;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+
     .overlay {
       height: calc(100% - 114px);
-      margin-top: 108px;
+      margin-top: 100px;
     }
 
     .content {
       flex-direction: row;
+      justify-content: center;
       padding-right: 130px;
       align-items: flex-start;
       padding: 0 40px;
@@ -424,51 +442,165 @@
       }
 
       .text {
+        flex: 0 0 35%;
         .name {
           width: 150px;
+
           p {
-          text-align: start;
+            text-align: start;
           }
         }
-        p {
-        padding-top: 30px;
-        text-align: start;
-        padding-right: 130px;
-        }
 
+        p {
+          padding-top: 30px;
+          text-align: start;
+        }
       }
     }
 
     .download-icons {
       flex-direction: row;
-      padding-left: 40px;
       padding-top: 0;
+      .apple, .play-market {
+        width: 270px;
+      }
     }
   }
+
   .edu-news-section {
     align-items: center;
+    padding-left: 122px;
+    padding-right: 122px;
+
+
     .content {
       .icon {
-       &.web-main {
-        align-self: center;
-        width: 544px;
-        img {
-          position: static;
+        margin-top: 20px;
+        &.web-main {
+          align-self: center;
+          width: 544px;
+
+          img {
+            position: static;
+          }
         }
-       }
-       &.web-lms {
-         align-self: center;
-         width: 546px;
-         img {
-           position: static;
-         }
-       }
+
+        &.web-lms {
+          align-self: center;
+          width: 546px;
+
+          img {
+            position: static;
+          }
+        }
       }
+
       .text {
+        &.main {
+          .name {
+            padding-left: 0;
+
+            p {
+              width: 230px;
+              text-align: start;
+            }
+          }
+        }
+
+        &.lms {
+          .name {
+            p {
+            margin-left: auto;
+              text-align: end;
+            }
+          }
+          p {
+            text-align: end;
+          }
+
+        }
+        .name {
+          p {
+          margin: 0;
+          }
+        }
         p {
           text-align: start;
         }
       }
     }
   }
+}
+
+@media all and (min-width: 992px) {
+  .about {
+    padding-left: 120px;
+  }
+  .book-cover {
+    display: flex;
+    justify-content: flex-end;
+    width: 488px;
+    height: 428px;
+    position: relative;;
+    align-items: center;
+    right: -15%;
+    justify-content: center;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #5cc0df, #00abec);
+    box-shadow: 9px 10.7px 23.5px 0.5px rgba(0, 0, 1, 0.2);
+     .icon {
+       flex: 0 0 420px;
+       img {
+         width: 100%;
+       }
+     }
+  }
+  .news-section {
+     &.second {
+       .content {
+         justify-content: flex-end;
+       }
+     }
+    .content {
+      .text {
+        p {
+          width: 475px;
+        }
+      }
+      .icon {
+        flex: 0 0 261px;
+        height: 467px;
+      }
+    }
+  }
+  .library-section {
+    .content {
+      .icon {
+        flex: 0 0 261px;
+        height: 467px;
+
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1199px) {
+ .book-cover {
+   right: -40%;
+ }
+ .edu-news-section {
+   .content {
+     flex-direction: row;
+     justify-content: center;
+     .text {
+       flex: 0 0 40%;
+       &.lms {
+         order: 1;
+       }
+     }
+     .icon {
+       flex: 0 0 40%;
+     }
+   }
+ }
 }
