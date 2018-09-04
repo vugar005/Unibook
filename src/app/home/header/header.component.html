@@ -1,18 +1,30 @@
 <div class="header-co">
 
   <div class="unibook-ico">
-    <img src="/assets/icons/unibook.svg">
+    <img src="./assets/icons/unibook.svg">
   </div>
-<button class="hamburger hamburger--slider custom-btn" [ngClass]="{'is-active': active}" type="button" (click)="active = !active" >
-  <span class="hamburger-box">
-    <span class="hamburger-inner"></span>
-  </span>
-</button>
+  <button class="hamburger hamburger--slider custom-btn" [ngClass]="{'is-active': active}" type="button" (click)="active = !active">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
 
-<div class="links" [ngStyle]="{'display': active ? 'flex' : 'none'}">
-  <a href="">Əsas səhifə </a>
-  <a href="">Xəbərlər </a>
-  <a href="">Distant təhsil </a>
-  <a href="">Bizimilə əlaqə </a>
-</div>
+  <div class="links" [ngStyle]="{'display': active ? 'flex' : 'none'}">
+    <div class="link" routerLink="/home/main" routerLinkActive="active">
+      <a  aria-pressed="true">Əsas səhifə </a>
+      <div class="circle"></div>
+    </div>
+    <div class="link">
+      <a >Xəbərlər </a>
+      <div class="circle"></div>
+    </div>
+    <div class="link" routerLink="/home/distance-learning" routerLinkActive="active">
+      <a  >Distant təhsil </a>
+      <div class="circle"></div>
+    </div>
+    <div class="link" routerLinkActive="active">
+      <a  >Bizimilə əlaqə </a>
+      <div class="circle"></div>
+    </div>
+  </div>
 </div>

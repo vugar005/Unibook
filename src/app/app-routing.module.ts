@@ -1,11 +1,15 @@
+import { NotFoundComponent } from './home/not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent, children: [
-    {path: '', redirectTo: 'main', pathMatch: 'full'},
-    {path: 'main', loadChildren: './home/main-page/main-page.module#MainPageModule'}
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent, children: [
+    {path: 'main', loadChildren: './home/main-page/main-page.module#MainPageModule'},
+    {path: 'distance-learning', loadChildren: './home/distance-learning/distance-learning.module#DistanceLearningModule'},
+    { path: '404', component: NotFoundComponent },
+    {path: '**', redirectTo: '404'}
   ]}
 ];
 
