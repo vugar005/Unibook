@@ -27,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/daemonite-material/css/material.min.css",
               "src/assets/custom-styles/hamburgers-settings.scss",
               "node_modules/aos/dist/aos.css",
               "src/styles.scss"

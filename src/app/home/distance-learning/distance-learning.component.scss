@@ -1,6 +1,8 @@
 :host {
   display: block;
   padding-top: 100px;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
 }
 
 .special-offer {
@@ -93,14 +95,17 @@
   }
   .types {
     display: flex;
+    justify-content: space-between;
     margin: 40px 0;
+    width: 100%;
    button {
-     font-size: 18px;
-     margin: 0 15px;
-     border-radius: 2px;
-     padding: 12px 50px;
-    border: 0;
-    outline: 0;
+    //  font-size: 18px;
+      width: 200px;
+      padding: 10px 35px;
+    //  border-radius: 2px;
+    //  padding: 12px 50px;
+    // border: 0;
+    // outline: 0;
     cursor: pointer;
     &.active {
       color: white;
@@ -109,8 +114,20 @@
    }
   }
   .search {
+    display: flex;
+    align-items: center;
+    width: 100%;
     border-radius: 2px;
     background-color: #ebebeb;
+    border: 0;
+    padding: 5px 10px;
+    input {
+      outline: 0;
+    }
+    .icon {
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 

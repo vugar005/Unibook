@@ -86,19 +86,20 @@
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-md-6">
+    <div class="col-md-5">
       <div class="category-filter">
         <div class="name">
           <p>Kateqoriyalar</p>
         </div>
         <div class="types">
-          <button class="speciality" (click)="type = 'speciality'" [ngClass]="{'active': type === 'speciality' }">İxtisasa
-            gorə</button>
-          <button class="course" (click)="type = 'course'" [ngClass]="{'active': type === 'course' }">Kursun tipinə
-            görə</button>
+          <button class="btn" (click)="type = 'speciality'" [className]="type === 'speciality' ? 'btn btn-primary' : 'btn btn-light'">Ixtisasa görə </button>
+          <button class="btn" (click)="type = 'course'" [className]="type === 'course' ? 'btn btn-primary' : 'btn btn-light'">Kursun tipinə görə</button>
         </div>
         <div class="search">
           <input placeholder="Axtar" class="search">
+          <div class="icon">
+              <fa-icon [icon]="faSearch"></fa-icon>
+          </div>
         </div>
       </div>
     </div>

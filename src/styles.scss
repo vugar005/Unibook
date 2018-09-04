@@ -1,7 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+$custom-color: (
+  color: #E91E63,
+  dark: #880E4F,
+  light: #F06292
+);
 
+$theme-colors: (
+  'primary': $custom-color
+);
+
+// Material
+@import "node_modules/daemonite-material/assets/scss/material";
 
 @font-face {
   font-family: 'Roboto';

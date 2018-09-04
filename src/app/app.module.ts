@@ -22,7 +22,7 @@ import { FooterComponent } from './home/footer/footer.component';
       BrowserModule,
       BrowserAnimationsModule,
       AppRoutingModule,
-      MainPageModule
+      MainPageModule,
    ],
    providers: [],
    bootstrap: [
