@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      <div class="category">
+        <div class="category-icon">
+          <img src="./assets/icons/c-2.svg">
+        </div>
+        <div class="text">
+          <p>Proqramlaşdırma</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="course-count">
+        <div class="count">140</div>
+        <div class="text">kurs tapıldı</div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="course-filter">
+
+        <div class="search">
+          <input placeholder="Axtar" class="search">
+          <div class="icon">
+            <fa-icon [icon]="faSearch"></fa-icon>
+          </div>
+        </div>
+        <div class="filters d-flex">
+          <div class="filter">
+            <mat-form-field class="w-100">
+              <mat-select placeholder="Filter">
+                <mat-option> </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="filter">
+            <mat-form-field class="w-100">
+              <mat-select placeholder="Filter">
+                <mat-option> </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="filter">
+            <mat-form-field class="w-100">
+              <mat-select placeholder="Filter">
+                <mat-option> </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <app-course-item
+       *ngFor="let course of courses"
+       [course]="course"
+       >
+      </app-course-item>
+    </div>
+  </div>
+</div>

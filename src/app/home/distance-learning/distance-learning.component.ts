@@ -1,5 +1,4 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { transition, trigger, useAnimation } from '@angular/animations';
 import { fadeIn} from 'ng-animate';
 
@@ -16,8 +15,6 @@ import { fadeIn} from 'ng-animate';
 })
 
 export class DistanceLearningComponent implements OnInit {
-  type = 'speciality';
-  faSearch = faSearch;
   @HostBinding('@fadeIn') animate = true;
 
   constructor() { }

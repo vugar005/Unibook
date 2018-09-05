@@ -1,0 +1,126 @@
+:host {
+  display: block;
+  margin: 30px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  .course-img {
+    flex: 0 0 221px;
+    box-shadow: 3.9px 4.6px 19.6px 0.4px rgba(0, 0, 0, 0.25);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex: 0 0 80%;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 0 0 75%;
+      border: 1px solid #dbdada;
+      border-right: 0;
+      border-left: 0;
+      padding-top: 15px;
+      padding-left: 4.6em;
+
+      .name {
+        font-family: Roboto-bold;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.44;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #3f3f3f;
+      }
+
+      .text {
+        display: flex;
+        padding: 1.2em 0;
+        width: 65%;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.64;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: #3f3f3f;
+      }
+
+      .content {
+        display: flex;
+
+        .line {
+          padding: 0 5px;
+        }
+
+        div {
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 1.64;
+          letter-spacing: 0.2px;
+          text-align: left;
+          color: #3f3f3f;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      flex: 0 0 25%;
+
+      .price {
+        font-family: Roboto-bold;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.44;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #3f3f3f;
+      }
+
+      .price {
+        font-size: 20px;
+      }
+
+      .original-price {
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.15;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #3f3f3f;
+        font-size: 20px;
+      }
+
+      .rating-number {
+        padding-top: 5px;
+
+        p {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 1.07;
+          letter-spacing: 0.2px;
+          text-align: right;
+          color: #3f3f3f;
+        }
+      }
+
+      .rating {
+        padding-top: 10px;
+      }
+    }
+  }
+}

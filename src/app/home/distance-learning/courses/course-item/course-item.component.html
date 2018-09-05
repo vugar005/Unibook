@@ -1,0 +1,31 @@
+<div class="item" *ngIf="course">
+  <div class="course-img">
+    <img [src]="course.imgUrl">
+  </div>
+
+  <div class="info">
+    <div class="left">
+      <div class="name">{{course.name}}</div>
+      <div class="text">{{course.shortInfo}}</div>
+      <div class="content">
+        <div>{{course.hours}} saat <span class="line">\</span></div>
+        <div>{{course.lessons}} dərslik <span class="line">\</span></div>
+        <div>{{course.tasks}} tapşırıq</div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="price">{{course.currentPrice}} AZN</div>
+      <div class="original-price"> <del>{{course.originalPrice}} AZN</del></div>
+      <div class="rating">
+        <star-rating
+        [starType]="'svg'"
+        [rating]="4.5"
+        labelPosition="top"
+        [readOnly]="true"
+        [staticColor]="'ok'"
+        [showHalfStars]="true"
+        ></star-rating>
+      </div>
+    </div>
+  </div>
+</div>

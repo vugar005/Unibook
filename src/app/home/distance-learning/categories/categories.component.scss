@@ -1,0 +1,142 @@
+:host {
+  display: block;
+  padding-top: 100px;
+}
+
+.special-offer {
+  width: 134px;
+  position: absolute;
+  right: 0;
+  img {
+    width: 100%;
+  }
+}
+.info {
+  .name {
+        font-family: Roboto-bold;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 1.78;
+        letter-spacing: -0.9px;
+        color: #000000;
+  }
+  .content {
+    padding-top: 25px;
+    p {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.78;
+        letter-spacing: -0.4px;
+        color: #000000;
+    }
+  }
+}
+
+.top-categories {
+  display: flex;
+  flex-wrap: wrap;
+  .top-category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   width: 200px;
+   height: 200px;
+   outline: 0;
+   cursor: pointer;
+   .text {
+     padding-top: 25px;
+   }
+   transition: all 300ms ease-in-out;
+   &:hover {
+    svg {
+      path {
+        transition: all 400ms ease-in-out;
+        fill:#DD2854;
+      }
+    }
+    box-shadow: 3.9px 4.6px 19.6px 0.4px rgba(0, 0, 0, 0.25);
+   }
+  }
+}
+.category-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .name {
+    p {
+        font-family: Roboto-bold;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 2.13;
+        letter-spacing: -0.8px;
+        text-align: center;
+        color: #000000;
+    }
+  }
+  .types {
+    display: flex;
+    justify-content: space-between;
+    margin: 27px 0;
+    width: 100%;
+   button {
+      width: 200px;
+      padding: 10px 35px;
+      border: 0;
+      outline: 0;
+    cursor: pointer;
+    &.active {
+      color: white;
+     background-image: linear-gradient(to right, #dd2853, #e83380);
+    }
+   }
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #ebebeb;
+    border: 0;
+    padding: 5px 10px;
+    input {
+      outline: 0;
+    }
+    .icon {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0;
+  .category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   width: 200px;
+   height: 200px;
+   transition: all 300ms ease-in-out;
+   outline: 0;
+   cursor: pointer;
+   .text {
+    padding-top: 25px;
+  }
+   &:hover {
+    svg {
+      path {
+        transition: all 400ms ease-in-out;
+        fill:#DD2854;
+      }
+    }
+    box-shadow: 3.9px 4.6px 19.6px 0.4px rgba(0, 0, 0, 0.25);
+   }
+
+  }
+}

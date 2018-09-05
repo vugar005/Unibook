@@ -1,0 +1,67 @@
+:host {
+  display: block;
+  padding-top: 40px;
+}
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    .category-icon {
+      width: 44px;
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      padding-top: 15px;
+    }
+  }
+  .course-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .count {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Roboto-bold;
+    }
+    .text {
+      font-size: 18px;
+      padding-top: 10px;
+      text-align: center;
+    }
+  }
+  .course-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+      .search {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-radius: 2px;
+        background-color: #ebebeb;
+        border: 0;
+        padding: 5px 10px;
+        input {
+          outline: 0;
+        }
+        .icon {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      .filters {
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+        .filter {
+         padding: 0 5px;
+         width: 33%;
+        }
+      }
+  }
+

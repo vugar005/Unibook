@@ -29,8 +29,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 600;
     cursor: pointer;
     outline: 0;
+    position: relative;
     &.active {
       .circle {
         display: block;
@@ -42,6 +44,8 @@
       height: 10px;
       background: black;
       border-radius: 50%;
+      position: absolute;
+      bottom: -12px;
     }
     a {
       text-decoration: none;
@@ -57,6 +61,9 @@
 
 @media all and (min-width: 1199px) {
 .header-co {
+  .unibook-ico {
+    margin-left: 0;
+  }
   .custom-btn {
     display: none;
   }
@@ -66,6 +73,8 @@
     top: 63px;
     left: 200px;
     box-shadow: none;
+    position: static;
+    padding-left: 75px;
   }
 }
 }
