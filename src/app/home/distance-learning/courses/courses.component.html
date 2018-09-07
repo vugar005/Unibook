@@ -56,6 +56,7 @@
       <app-course-item
        *ngFor="let course of courses"
        [course]="course"
+       [routerLink]="course.id"
        >
       </app-course-item>
     </div>

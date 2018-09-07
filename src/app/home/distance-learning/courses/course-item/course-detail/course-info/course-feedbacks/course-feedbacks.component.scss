@@ -1,0 +1,78 @@
+:host {
+  display: block;
+  padding-top: 2.25em;
+  width: 100%;
+  font-size: 16px;
+}
+.header {
+    font-family: Roboto-bold;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.94;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #3f3f3f;
+}
+.feedbacks {
+  width: 100%;
+  margin-top: 1em;
+  .d-card {
+    width: 100%;
+    padding: 1.75em;
+    background-color: #f7f8fa;
+    margin-bottom: 1.87em;
+    .d-card-header {
+      display: flex;
+      .d-card-header-image {
+        flex: 0 0 2.5em;
+        img {
+          width: 100%;
+        border-radius: 50%;
+        }
+      }
+
+      .d-card-header-info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.1em;
+        align-items: flex-start;
+        .name {
+            font-family: Roboto-bold;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.73;
+            letter-spacing: -0.1px;
+            text-align: left;
+            color: #3f3f3f;
+        }
+
+        .rating {}
+
+        .comment-date {
+            font-family: Roboto;
+            font-size: 12px;
+            line-height: 1.92;
+            letter-spacing: 0.2px;
+            text-align: left;
+            color: #3f3f3f;
+        }
+      }
+
+      .d-card-header-aside {
+        margin-left: auto;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+
+    .d-card-content {
+      padding-top: 0.9em;
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 1.64;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: #3f3f3f;
+    }
+  }
+}

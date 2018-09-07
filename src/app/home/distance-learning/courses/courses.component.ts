@@ -10,6 +10,7 @@ export class CoursesComponent implements OnInit {
   faSearch = faSearch;
   courses = [
     {
+      id: 1,
       name: 'Machine Learning A-Z™: Hands-On Python & R In Data Science',
       shortInfo: `It is a long established fact that a reader will be distracted
       by the readable content  of a page when looking at its layout.
@@ -23,6 +24,7 @@ export class CoursesComponent implements OnInit {
       originalPrice: 200
     },
     {
+      id: 2,
       name: 'JavaScript Algorithms and Data Structures Masterclass',
       shortInfo: `It is a long established fact that a reader will be distracted
       by the readable content  of a page when looking at its layout.
@@ -36,6 +38,7 @@ export class CoursesComponent implements OnInit {
       originalPrice: 200
     },
     {
+      id: 3,
       name: 'JavaScript Algorithms and Data Structures Masterclass',
       shortInfo: `It is a long established fact that a reader will be distracted
       by the readable content  of a page when looking at its layout.
@@ -49,6 +52,7 @@ export class CoursesComponent implements OnInit {
       originalPrice: 200
     },
     {
+      id: 4,
       name: 'Learning Hands-On Ruby & R In Data Science',
       shortInfo: `It is a long established fact that a reader will be distracted
       by the readable content  of a page when looking at its layout.

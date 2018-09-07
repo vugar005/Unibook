@@ -1,0 +1,156 @@
+:host {
+  display: block;
+  padding-top: 2.5em;
+}
+
+.info {
+  display: flex;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 75%;
+    border-right: 0;
+    border-left: 0;
+    padding: 40px 0;
+
+    .name {
+      font-family: Roboto-bold;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.44;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    .text {
+      display: flex;
+      padding: 1.2em 0;
+      width: 75%;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.64;
+      letter-spacing: 0.2px;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    .content {
+      display: flex;
+
+      .line {
+        padding: 0 5px;
+      }
+
+      div {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.64;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: #ffffff
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 0 0 25%;
+    padding-top: 25px;
+
+    .price {
+      font-family: Roboto-bold;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.44;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    .price {
+      font-size: 20px;
+    }
+
+    .original-price {
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    .rating-number {
+      padding-top: 5px;
+
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.07;
+        letter-spacing: 0.2px;
+        text-align: right;
+        color: #ffffff;
+      }
+    }
+
+    .rating {
+      padding-top: 10px;
+    }
+  }
+}
+
+.course-preview {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .course-img {
+    width: 221px;
+    height: 221px;
+    box-shadow: 3.9px 4.6px 19.6px 0.4px rgba(0, 0, 0, 0.25);
+    margin: -22px 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .btn-buy {
+    width: 100%;;
+    margin-top: 38px;
+    background-color: #e73b65;
+    box-shadow: 3.9px 4.6px 19.6px 0.4px rgba(0, 0, 0, 0.25);
+    border: 0;
+    outline: 0;
+    padding: 1em 3em;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.15;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.info-actions {
+  button {
+    border: 0;
+    outline: 0;
+    padding: 0.9em 6em;
+    cursor: pointer;
+    &.active {
+      color: white;
+     background-image: linear-gradient(to right, #dd2853, #e83380);
+    }
+  }
+}

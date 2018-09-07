@@ -6,6 +6,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent, children: [
+    {path: '', redirectTo: 'main', pathMatch: 'full'},
     {path: 'main', loadChildren: './home/main-page/main-page.module#MainPageModule', data: { animation: 'fadeIn' }},
     {path: 'distance-learning', loadChildren: './home/distance-learning/distance-learning.module#DistanceLearningModule',
     data: { animation: 'fadeIn' }},

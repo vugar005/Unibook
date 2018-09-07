@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  font-size: 16px;
+  padding-top: 3.31em;
+}
+.course-content-info {
+
+  .header {
+      font-family: Roboto-bold;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1.94;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #3f3f3f;
+  }
+  .text {
+    padding-top: 1.68em;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 2.21;
+      letter-spacing: 0.2px;
+      text-align: left;
+      color: #3f3f3f;
+  }
+}
