@@ -14,4 +14,45 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-8">
+      <div class="line"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-7">
+      <div class="topics">
+        <p class="header">Mövzular</p>
+        <div class="topic" *ngFor="let topic of topics;let i = index;" [ngClass]="{'active': selectedTopic === i}" (click)="selectTopic(i)">
+          <div class="moduleName">
+            Module {{i+1}}: {{topic.name}}
+          </div>
+          <div class="moduleContent">
+           <div class="count">
+           {{topic.lectures}}
+           </div>
+           <div class="more">
+            Ətraflı
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="materials" *ngIf="showMaterials">
+        <div class="header">Materiallar</div>
+        <div class="material" *ngFor="let item of materials">
+          <div class="icon">
+            <fa-icon [icon]="faPlayCircle"></fa-icon>
+          </div>
+           <div class="name">
+             {{item.name}}
+           </div>
+           <div class="duration">
+             {{item.duration}}
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

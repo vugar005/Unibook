@@ -1,0 +1,209 @@
+:host {
+  display: block;
+  padding-top: 2.93em;
+  font-size: 16px;
+}
+
+.cards {
+  padding-top: 2.25em;
+  .new-card {
+   .header {
+     display: flex;
+     align-items: center;
+     p {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.44;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3f3f3f;
+        padding-left: 10px;
+     }
+     .card-icons {
+       display: flex;
+       padding-left: 15px;
+       .icon {
+         height: 40px;
+         margin-right: 30px;
+         img {
+           height: 100%;
+         }
+       }
+     }
+   }
+    .card-input-template {
+      background-color: #f7f8fa;
+      padding: 2.20em 1.93em;
+      margin-top: 1.5em;
+      .row {
+        margin-top: 0.9em;
+        margin-bottom: 0.9em;
+      }
+     input {
+      background-color: #ffffff;
+      border: solid 1px #cccccc;
+      padding: 0.6em 1em;
+      width: 100%;
+     }
+     input.left {
+       &::placeholder {
+          text-align: left!important;
+       }
+     }
+     input::placeholder {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 1.64;
+        text-align: center;
+        color: #aeaeae;
+     }
+    }
+  }
+}
+.c-price {
+    font-family: Roboto-bold;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.17;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #3f3f3f;
+    del {
+      font-family: Roboto;
+      font-weight: 300;
+      font-size: 25px;
+    }
+}
+
+.saved-card {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  // height: 153px;
+  border-radius: 10px;
+  background-color: #707070;
+  padding-top: 1.62em;
+  padding-bottom: 1.12em;
+  padding-left: 1.62em;
+  padding-right: 1.43em;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color, box-shadow 300ms ease-in-out;
+  &.selected {
+    background-color: #0193c2;
+    box-shadow: 3.9px 4.6px 9.8px 0.2px rgba(0, 0, 0, 0.25);
+    .input-code .card-number  {
+      background-color: #3FAFD2;
+    }
+    .card-expiration {
+      input {
+        background-color: #3FAFD2;
+      }
+    }
+    }
+  .input-code {
+    width: 100%;
+    display: flex;
+    .card-number {
+      font-family: Roboto;
+      font-size: 13px;
+      line-height: 1.64;
+      letter-spacing: 0.3px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #959595;
+      padding-left: 0.87em;
+      padding-right: 1.68em;
+      transition: background-color 300ms ease-in-out;
+    }
+    input {
+      height: 23px;
+      background-color: #959595;
+     border: 0;
+     width: 25%;
+     outline: 0;
+     &::placeholder {
+      font-family: Roboto;
+      font-size: 11px;
+      line-height: 2.09;
+      letter-spacing: 0.2px;
+      text-align: center;
+      color: white;
+     }
+    }
+  }
+  .bank-name {
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.92;
+      letter-spacing: 0.2px;
+      text-align: left;
+      color: #ffffff;
+     padding-bottom: 1.3em;
+  }
+  .card-expiration {
+    display: flex;
+    padding-top: 0.4em;
+    input {
+        width: 52px;
+        height: 23px;
+     //   padding: 0.5em 1em;
+     background-color: #959595;
+     border: 0;
+    margin-right: 0.5em;
+    transition: background-color 300ms ease-in-out;
+    }
+    input::placeholder {
+      font-family: Roboto;
+      font-size: 11px;
+      line-height: 2.09;
+      letter-spacing: 0.2px;
+      text-align: center;
+      color: white;
+     }
+  }
+  .card-icon {
+    width: 56px;
+    position: absolute;
+    bottom: 0;
+    right: 23px;
+    padding-bottom: 19px;
+    img {
+      width: 100%;
+    }
+  }
+  .bottom {
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card-holder-name {
+        font-family: Roboto;
+        font-size: 11px;
+        line-height: 2.09;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: #ffffff;
+    }
+  }
+}
+.purchase-line {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 3em 0;
+  button.purchase {
+    width: 16em;
+    }
+}
+
+.saved-cards-column {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  padding-top: 58px;
+}

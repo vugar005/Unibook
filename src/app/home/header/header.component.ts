@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { RegistrationDialogComponent } from './registration-dialog/registration-dialog.component';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   active = false;
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
-  ngOnInit() {
+
+  openAuthDialog() {
+    const ref = this.dialog.open(RegistrationDialogComponent, {panelClass: 'auth-custom-dialog'});
   }
 
 }

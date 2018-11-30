@@ -1,3 +1,4 @@
+import { CoursePurchaseComponent } from './courses/course-item/course-detail/course-purchase/course-purchase.component';
 import { CourseDetailComponent } from './courses/course-item/course-detail/course-detail.component';
 import { CourseItemComponent } from './courses/course-item/course-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,10 +12,11 @@ import { DistanceLearningRoutes } from './distance-learning.routing';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { StarRatingModule } from 'angular-star-rating';
+ import { StarRatingModule } from 'angular-star-rating';
 import { CourseContentComponent } from './courses/course-item/course-detail/course-content/course-content.component';
 import { CourseInfoComponent } from './courses/course-item/course-detail/course-info/course-info.component';
 import { CourseFeedbacksComponent } from './courses/course-item/course-detail/course-info/course-feedbacks/course-feedbacks.component';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [
@@ -24,7 +26,8 @@ import { CourseFeedbacksComponent } from './courses/course-item/course-detail/co
     FontAwesomeModule,
     MatFormFieldModule,
     MatSelectModule,
-    StarRatingModule.forRoot()
+    StarRatingModule.forRoot(),
+    SharedModule
   ],
   declarations: [
     DistanceLearningComponent,
@@ -34,7 +37,8 @@ import { CourseFeedbacksComponent } from './courses/course-item/course-detail/co
     CourseDetailComponent,
     CourseInfoComponent,
     CourseContentComponent,
-    CourseFeedbacksComponent
+    CourseFeedbacksComponent,
+    CoursePurchaseComponent
   ]
 })
 export class DistanceLearningModule {}

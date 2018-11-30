@@ -1,3 +1,4 @@
+import { CoursePurchaseComponent } from './courses/course-item/course-detail/course-purchase/course-purchase.component';
 import { CourseInfoComponent } from './courses/course-item/course-detail/course-info/course-info.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CategoriesComponent } from './categories/categories.component';
@@ -13,7 +14,8 @@ const routes: Routes = [
     {path: 'courses/:id', component: CourseDetailComponent, children: [
       {path: '', redirectTo: 'info'},
       {path: 'info', component: CourseInfoComponent},
-      {path: 'content', component: CourseContentComponent}
+      {path: 'content', component: CourseContentComponent},
+      {path: 'purchase', component: CoursePurchaseComponent},
     ]},
     {path: 'categories', component: CategoriesComponent}
    ]}

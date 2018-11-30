@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-course-detail',
@@ -21,9 +22,11 @@ export class CourseDetailComponent implements OnInit {
     originalPrice: 200
   };
   type = 'info';
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    }
+  get isView() {
+    return !this.router.url.includes('purchase');
   }
-
 }

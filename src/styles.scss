@@ -32,3 +32,20 @@ p, div {
   font-family: Roboto;
 }
 
+.button-primary {
+  background-color: #e73b65;
+  box-shadow: 3.9px 4.6px 19.6px 0.4px rgba(0, 0, 0, 0.25);
+  border: 0;
+  outline: 0!important;
+  padding: 1em 3em;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.15;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.auth-custom-dialog {
+}

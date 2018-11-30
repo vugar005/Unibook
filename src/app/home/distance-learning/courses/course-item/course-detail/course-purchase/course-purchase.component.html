@@ -1,0 +1,99 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="c-price">
+          Qiymət: <del>199 AZN </del> 99.9 AZN
+      </div>
+    </div>
+  </div>
+  <div class="row cards">
+    <div class="col-12 col-md-5">
+      <div class="new-card">
+        <div class="header">
+          <!-- <div class="icon">
+          <fa-icon [icon]="faCheckCircle"></fa-icon>
+          </div>
+          <p>Yeni kart vasitəsilə</p> -->
+          <div class="card-icons">
+           <div class="icon">
+              <img src="./assets/icons/visa.svg">
+           </div>
+           <div class="icon">
+              <img src="./assets/icons/mastercard.svg">
+           </div>
+           <div class="icon">
+              <img src="./assets/icons/maestro.svg">
+           </div>
+          </div>
+        </div>
+        <div class="card-input-template">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <input placeholder="Card Number" class="left">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4"><input placeholder="MM"></div>
+              <div class="col-4"><input placeholder="YY"></div>
+              <div class="col-4"><input placeholder="Security"></div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                  <input placeholder="Name on Card"  class="left">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-7"><input placeholder="Country"></div>
+              <div class="col-5"><input placeholder="Zip/Postal Code"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-7">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 saved-cards-column" >
+            <div class="saved-card" *ngFor="let card of cards" [ngClass]="{selected: selected === card.id}" (click)="selected = card.id">
+              <div class="bank-name">{{card.bankName}}</div>
+              <div class="input-code">
+                <div class="card-number">
+                    XXXXX&nbsp;&nbsp;XXXXX&nbsp;&nbsp;XXXXX&nbsp;&nbsp;XXXXX
+                </div>
+                <!-- <input placeholder=" disabled="true"> -->
+                <!-- <input placeholder="XXXXX" disabled="true">
+                <input placeholder="XXXXX" disabled="true">
+                <input placeholder="XXXXX" disabled="true"> -->
+              </div>
+              <div class="card-expiration">
+                <input placeholder="MM" disabled="true">
+                <input placeholder="YY" disabled="true">
+              </div>
+              <div class="bottom">
+                <div class="card-holder-name">
+                    {{card.holderName}}
+                </div>
+              </div>
+              <div class="card-icon">
+                  <img src="./assets/icons/{{card.type}}-logo-white.png">
+                </div>
+            </div>
+          </div>
+          <div class="col-6"></div>
+        </div>
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 ">
+      <div class="purchase-line">
+      <button class="button-primary purchase">Ödəniş et</button>
+      </div>
+    </div>
+  </div>
+</div>

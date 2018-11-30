@@ -9,6 +9,8 @@ import { MainPageModule } from './home/main-page/main-page.module';
 import { HeaderComponent } from './home/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './home/footer/footer.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { RegistrationDialogComponent } from './home/header/registration-dialog/registration-dialog.component';
 
 @NgModule({
    declarations: [
@@ -16,15 +18,18 @@ import { FooterComponent } from './home/footer/footer.component';
       HomeComponent,
       HeaderComponent,
       NotFoundComponent,
-      FooterComponent
+      FooterComponent,
+     RegistrationDialogComponent
    ],
    imports: [
       BrowserModule,
       BrowserAnimationsModule,
       AppRoutingModule,
       MainPageModule,
+      MatDialogModule
    ],
    providers: [],
+   entryComponents: [RegistrationDialogComponent],
    bootstrap: [
       AppComponent
    ]

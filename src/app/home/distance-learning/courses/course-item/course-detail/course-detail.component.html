@@ -35,7 +35,7 @@
               <div class="course-img">
                   <img [src]="course.imgUrl">
                </div>
-               <button class="btn-buy">Sifariş et</button>
+               <button class="btn-buy" routerLink="purchase" *ngIf="isView">Sifariş et</button>
           </div>
 
         </div>
@@ -43,11 +43,11 @@
 
       </div>
 </div>
-<div class="container">
+<div class="container" *ngIf="isView">
     <div class="row">
         <div class="col-12">
             <div class="info-actions">
-                <button (click)="type = 'info'" [routerLink]="['info']"  [ngClass]="{'active': type === 'info'}">Məlumat</button>
+                <button (click)="type = 'info'" [routerLink]="['info']" [ngClass]="{'active': type === 'info'}">Məlumat</button>
                 <button (click)="type = 'course'" [routerLink]="['content']" [ngClass]="{'active': type === 'course'}">Kurs</button>
               </div>
         </div>

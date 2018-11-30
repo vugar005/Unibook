@@ -1,0 +1,77 @@
+:host {
+  display: block;
+  padding: 0 20px;
+}
+
+.auth-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 0.87;
+    letter-spacing: 0.3px;
+    padding-bottom: 28px;
+  }
+
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+input {
+  width: 242px;
+  margin-bottom: 11px;
+  border: solid 1px #cccccc;
+  height: 29px;
+  &::placeholder {
+    text-align: center;
+    color: #717171;
+  }
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.btn-auth {
+    margin-top: 1.1em;
+    background-color: #e73b65;
+    box-shadow: 3.9px 4.6px 19.6px 0.4px rgba(0, 0, 0, 0.25);
+    border: 0;
+    outline: 0;
+    padding: 1em 3em;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.15;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    &.login {
+      background-color: #59bfe0;
+      margin-top: 0;
+    }
+}
+
+.if-registered {
+  width: 100%;
+  .text {
+    padding: 1.7em 0;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.62;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: grey;
+  }
+}
